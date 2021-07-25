@@ -2,8 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-- Clone this repository: `git clone https://github.com/umarhamza/hacker-news.git`
-- Change into hacker-news directory: `cd hacker-news`
+- Clone this repository: `git clone https://github.com/arnavgoel18/search-page.git`
 - Install all NPM packages: `npm i`
 - Start the project: `npm run start`
 

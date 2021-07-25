@@ -65,7 +65,6 @@
 
 .news_container{
     display: flex;
-    border: solid #000 1px;
     height: auto;
     align-items: center;
     padding: 10px 0;

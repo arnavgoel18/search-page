@@ -28,7 +28,7 @@ function LandingPage() {
         });
 
         //TO RENDER CHANGES
-        // setChanged(1);
+        //setChanged(1);
     }
 
     return (
@@ -53,6 +53,7 @@ function LandingPage() {
 
                         /*Too See Objects being fetched in Console*/
                         console.log(data2);
+                        //uncomment line 31 to see objects in console
                         
                         return(
                             <NewsDiv key = {data2.id} {...data2}></NewsDiv>

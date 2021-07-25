@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+- Clone this repository: `git clone https://github.com/arnavgoel18/search-page.git`
+- Install all NPM packages: `npm i`
+- Start the project: `npm run start`
+
+## Problems with the program
+
+- Not able to render the NewsDiv Component onto the browser as objects cannot be mapped.
+- Cannot convert object to array to map it.
+
 ## Available Scripts
 
 In the project directory, you can run:

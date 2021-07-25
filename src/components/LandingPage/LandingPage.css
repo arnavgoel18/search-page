@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: #f05438;
+    line-height: 8vh;
+    text-align: center;
+
+    /*Font for Header text*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.search_bar-container{
+    width: 100%;
+    height: auto;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.search_bar .keyword{
+    border: none;
+    border-bottom: solid #666 1px;
+    border-spacing: 10px;
+    height: 5vh;
+}
+
+.search_bar .btn{
+    margin-left: 1rem;
+    padding: 10px 20px;
+    background-color: #f05438;
+    border-radius: 5px;
+    border: solid #fff 1px;
+    
+    /*Font for Search Button*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+/*Hover Effects*/
+.search_bar .btn:hover{
+    transform: scale(1.1);
+}
+
+.search_bar .keyword:hover{
+    border-color: #000;
+    transform: translateY(2px);
+}
+
+.news_container{
+    display: flex;
+    border: solid #000 1px;
+    height: auto;
+    align-items: center;
+    padding: 10px 0;
+    flex-direction: column;
+}
+

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.news_container_child{
+    width: 60%; 
+    height: 10vh;
+    border: solid red 1px;
+    margin: 1vh 0;
+    display: flex;
+}

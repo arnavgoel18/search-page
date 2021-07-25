@@ -4,9 +4,15 @@ import './LandingPage.css'
 
 //import <NewsDiv/> Page here to be rendered here post mappin
 
+let data = [];
+let data2 = [];
+let objectIDs = [];
+
+
 function LandingPage() {
 
     const [keyword, setKeyword] = useState();
+    const [changed, setChanged] = useState();
 
     const getKeyword = async(e) => {
         e.preventDefault();
@@ -14,18 +20,15 @@ function LandingPage() {
         
         const api_call_fir_objectID = await fetch(`http://hn.algolia.com/api/v1/search?query=${keyword}`);
 
-        const data = await api_call_fir_objectID.json();
+        data = await api_call_fir_objectID.json();
         console.log((data.hits));
 
-        const objectIDs = [];
-
-        data.hits.map((hit) => {
-            console.log(hit.objectID);
+        data.hits.forEach((hit) => {
+            objectIDs.push(hit.objectID);
         });
 
-        // `http://hn.algolia.com/api/v1/items/:${hit.objectID}
-        
-
+        //TO RENDER CHANGES
+        // setChanged(1);
     }
 
     return (
@@ -42,9 +45,21 @@ function LandingPage() {
                 </div>
             </div>
             <div className = "news_container">
-                {/* Map Function to be Inserted here and <NewsDiv/> component added here */}
-                <NewsDiv/>
-            </div>
+                {
+                    objectIDs.map(async(objectID) => {
+                        const api_call = await fetch(`http://hn.algolia.com/api/v1/items/${objectID}`);
+                        
+                        data2 = await api_call.json();
+
+                        /*Too See Objects being fetched in Console*/
+                        console.log(data2);
+                        
+                        return(
+                            <NewsDiv key = {data2.id} {...data2}></NewsDiv>
+                        )
+                    })
+                }
+           </div>
         </> 
     )
 }

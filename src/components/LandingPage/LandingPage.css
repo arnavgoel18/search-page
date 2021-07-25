@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
 
 *{
     margin: 0;
@@ -31,6 +33,10 @@
     border-bottom: solid #666 1px;
     border-spacing: 10px;
     height: 5vh;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    text-transform: capitalize;
 }
 
 .search_bar .btn{

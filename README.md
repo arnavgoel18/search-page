@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - Install all NPM packages: `npm i`
 - Start the project: `npm run start`
 
+## Problems with the program
+
+- Not able to render the NewsDiv Component onto the browser as objects cannot be mapped.
+- Cannot convert object to array to map it.
 
 ## Available Scripts
 
